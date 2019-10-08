@@ -1,0 +1,238 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color: white;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    background-color: #FFA500;
+    color: black;
+    justify-content: center;
+}
+.header-option{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.header-option:hover{
+    background-color: black;
+    color: white !important;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#image{
+    background: url("image1.jpg");
+    background-size: cover;
+    background-position: 100% 80%;
+    height: 500px;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+#menu-nav{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+#menu-nav h1{
+    font-size: 50px;
+    color: black;
+}
+.menu-option{
+    border: 5px solid white;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    width: 300px;
+    transition: 0.2s;
+}
+.menu-option:hover{
+    background-color: #FFA500;
+    color: black;
+    cursor: default;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#road{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#map-info{
+    width: 35%;
+    background-color: white;
+    color: black;
+}
+#map{
+    width: 65%;
+}
+#footer{
+    text-align: center;
+}
+#header a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.menu-option img{
+    height: 200px;
+}
+
+#result{
+    width: 100px;
+    height: 100px;
+    background-color: #FFA500;
+    color: black;
+    bottom: 0;
+    right: 0;
+    z-index: 998;
+    position: fixed;
+    border-radius: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-box-shadow: 10px 10px 36px 14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 36px 14px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 36px 14px rgba(0,0,0,0.75);
+}
+#result img{
+    height: 50px;
+}
+#resultCheck{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    color: bwhite;
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+}
+#resultCheck table{
+    color: black;
+    border-collapse: collapse;
+    width: 240px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#resultCheck tr,td{
+    border: 3px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#resultCheck tr:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#resultCheck img{
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#resultImage:hover{
+    cursor: pointer;
+}
+
+#endprice{
+    width: 300px;
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
+  
+}
+
+
+#orderheader{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    justify-content: space-around;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #ff8000;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #road{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #map-info{
+        width: 100%;
+    }
+    #map{
+        width: 100%;
+    }
+  }
